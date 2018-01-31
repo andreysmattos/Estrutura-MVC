@@ -2,8 +2,8 @@ ROUTE: /   Controller: IndexController    Action: index   View: index.phtml
 
 
 <?php
-foreach($this->view->carros as $car){ ?>
-	<p> <?php echo $car; ?> </p>
+foreach($this->view->client as $pessoa){ ?>
+	<p> <?php echo $pessoa['name']; ?> </p>
 
 
 <?php
