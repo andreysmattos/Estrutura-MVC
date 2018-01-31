@@ -1,0 +1,14 @@
+ROUTE: /   Controller: IndexController    Action: index   View: index.phtml
+
+
+<?php
+foreach($this->view->carros as $car){ ?>
+	<p> <?php echo $car; ?> </p>
+
+
+<?php
+} //fim do foreach
+
+
+
+?>
