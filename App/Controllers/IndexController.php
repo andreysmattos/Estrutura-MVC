@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-use App\Conn;
-use App\Models\Client;
+
 use SON\Controller\Action;
+use SON\DI\Container;
 
 class IndexController extends Action {
 
@@ -13,7 +13,7 @@ class IndexController extends Action {
 	public function index(){
 
 		
-		$client = new Client(Conn::getDb());
+		$client = Container::getModel('client');
 		
 		
 

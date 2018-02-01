@@ -8,8 +8,8 @@ class Route extends Bootstrap{
 
 	//Metodos
 	public function initRoutes(){
-		$routes['home'] = array('route'=>'/', 'controller'=>'indexController','action'=>'index');
-		$routes['contact'] = array('route'=>'/contact', 'controller'=>'indexController','action'=>'contact');
+		$routes['home'] = array('route'=>'/MVC/public/', 'controller'=>'indexController','action'=>'index');
+		$routes['contact'] = array('route'=>'/MVC/public/contact', 'controller'=>'indexController','action'=>'contact');
 		$this->setRoutes($routes);
 	}
 
