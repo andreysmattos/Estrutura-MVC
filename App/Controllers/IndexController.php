@@ -15,10 +15,13 @@ class IndexController extends Action {
 		
 		$client = Container::getModel('client');
 		
+		/*
+		No array primeiro passa o campo e depos o valor.
+		$a = array('name'=>'AndreySAVE', 'email'=>'andreysmattosSAVE@hotmail.com');
+		*/
+		$a = array('name'=>'TESTANDO2');
+		$this->view->client = $client->update(2, $a);
 		
-
-
-		$this->view->client = $client->list();
 
 
 		//Esse index passado no render(), é o nome do arquivo na pasta Views/index

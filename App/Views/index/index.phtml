@@ -2,13 +2,7 @@ ROUTE: /   Controller: IndexController    Action: index   View: index.phtml
 
 
 <?php
-foreach($this->view->client as $pessoa){ ?>
-	<p> <?php echo $pessoa['name']; ?> </p>
-
-
-<?php
-} //fim do foreach
-
-
-
+echo "<h3>";
+echo $this->view->client['name'];
+echo "</h3>";
 ?>

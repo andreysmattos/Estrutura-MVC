@@ -3,8 +3,10 @@
 namespace SON\init;
 
 abstract class Bootstrap {
+	
 	//Atributos
 	private $route;
+
 
 	//Metodos
 	public function __construct(){
@@ -28,9 +30,6 @@ abstract class Bootstrap {
 				$controller->$action();
 
 			}
-
-
-
 		});
 	}
 
@@ -40,4 +39,3 @@ abstract class Bootstrap {
 	}
 }
 
-?>

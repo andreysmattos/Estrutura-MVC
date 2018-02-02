@@ -2,20 +2,9 @@
 
 namespace App\Models;
 
-class Client {
+use SON\Models\Crud;
+
+class Client extends Crud{
 	//Atributos
-	protected $db;
-
-	//Metodos
-
-	//Construtor
-	public function __construct(\PDO $db){
-		$this->db = $db;
-	}
-
-
-	public function list(){
-		$sql = "SELECT * FROM clients";
-		return $this->db->query($sql);
-	}
+	protected $table = 'clients';
 }
